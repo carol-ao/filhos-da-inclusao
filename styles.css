@@ -21,6 +21,7 @@ header {
   background-color: #ec5ad7;
   padding: 10px 0;
   position: sticky;
+  z-index: 10;
   top: 0;
   width: 100%;
 }
@@ -129,7 +130,31 @@ footer {
 }
 
 #principal img {
-  max-width: 33%;
+  width: 500px;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para o carrossel */
+.carousel {
+  overflow: hidden;
+  width: 600px;
+  height: auto;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+  width: 600px; /* Ajuste a largura conforme necessário */
+  height: 300px;
 }
 
 .partner-logos {
