@@ -9,11 +9,11 @@ body {
   font-family: Helvetica, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f6ce2e;
 }
 
 /* Cabeçalho */
@@ -128,15 +128,8 @@ footer {
   justify-content: center;
 }
 
-.partners {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
-.partners h2 {
-  margin-bottom: 20px;
-  color: #333;
+#principal img {
+  max-width: 33%;
 }
 
 .partner-logos {
@@ -155,6 +148,11 @@ footer {
 
 .partner-logos img:hover {
   transform: scale(1.1);
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
 }
 
 /* Ajuste para dispositivos menores */
