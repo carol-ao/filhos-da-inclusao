@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONG Filhos da Inclusão</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#missao">Missão e Visão</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="principal">
+      <img
+        src="img/filhos-da-inclusão-abertura.jpeg"
+        alt="Logo Filhos da Inclusão"
+        width="500px"
+        height="500px"
+      />
+    </div>
+    <main>
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+          bla bla bla Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Optio voluptate voluptatem iste quod possimus quam unde. Earum
+          similique quae, magni, voluptates illum sint deserunt, facere atque
+          aut dolore reiciendis delectus.
+        </p>
+      </section>
+
+      <section id="missao">
+        <h2>Missão</h2>
+        <p>
+          Promover a inclusão social e o desenvolvimento integral de crianças
+          atípicas, não atípicas e em situação de vulnerabilidade social do
+          bairro de Santo Amaro, por meio de atividades educativas, recreativas
+          e terapêuticas. Fomentar um ambiente acolhedor e integrador que
+          valorize a diversidade, onde crianças atípicas e não atípicas possam
+          aprender, crescer e se desenvolver juntas, fortalecendo laços de
+          amizade e respeito mútuo. Nosso objetivo é contribuir para uma
+          sociedade mais inclusiva, equitativa e sensível à necessidade de
+          todos.
+        </p>
+      </section>
+      <section id="visao">
+        <h2>Visão</h2>
+        <p>
+          Até 2026, ser uma referência na promoção da inclusão social e no
+          desenvolvimento de crianças atípicas do bairro de Santo Amaro, na
+          região metropolitana do Recife, estabelecendo um espaço próprio para
+          atendimento especializado e integrado. Almejamos criar uma comunidade
+          onde a diversidade é celebrada e cada criança tem a oportunidade de
+          alcançar seu pleno potencial. Queremos que a inclusão seja uma prática
+          comum e natural em todos os aspectos da vida comunitária, contribuindo
+          para a construção de uma sociedade mais justa, empática e inclusiva.
+        </p>
+      </section>
+      <!-- Seção de Parceiros -->
+      <section class="partners">
+        <h2>Parceiros</h2>
+        <div class="partner-logos">
+          <img src="img/bernhoeft.jpg" alt="Bernhoeft" />
+          <img src="img/pop-rua.jpg" alt="Pop Rua" />
+          <img src="img/quest-trade.jpg" alt="Quest Trade" />
+          <img src="img/transforma-recife.jpg" alt="Transforma Recife" />
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <form id="contatoForm">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="statusMensagem"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 ONG Filhos da Inclusão. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
