@@ -150,11 +150,6 @@ footer {
   transform: scale(1.1);
 }
 
-footer img {
-  width: 30px;
-  height: 30px;
-}
-
 /* Ajuste para dispositivos menores */
 @media (max-width: 600px) {
   .navbar {
