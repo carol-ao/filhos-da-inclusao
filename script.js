@@ -27,17 +27,23 @@ document.getElementById("contatoForm").addEventListener("submit", function(event
     document.getElementById("contatoForm").reset();
 });
 
-let currentIndex = 0;
+const wrapper = document.querySelector('.carousel-wrapper');
+const slides = document.querySelectorAll('.carousel-slide');
+let scrollPosition = 0;
 
-function showNextImage() {
-    const carouselImages = document.querySelector(".carousel-images");
-    const images = document.querySelectorAll(".carousel-images img");
-    currentIndex = (currentIndex + 1) % images.length;
+// Calcula a largura total do carrossel com todas as imagens
+const totalWidth = Array.from(slides).reduce((acc, slide) => acc + slide.offsetWidth, 0);
 
-    const offset = -currentIndex * images[0].width;
-    carouselImages.style.transform = `translateX(${offset}px)`;
+// Função para rolar o carrossel automaticamente
+function scrollCarousel() {
+    scrollPosition += 1; // Ajuste para aumentar a velocidade de rolagem
+
+    if (scrollPosition >= totalWidth - wrapper.parentElement.offsetWidth) {
+        scrollPosition = 0; // Reinicia quando atinge o final
+    }
+
+    wrapper.style.transform = `translateX(-${scrollPosition}px)`;
 }
 
-// Altere o tempo (em milissegundos) para a rotação automática
-setInterval(showNextImage, 3000);
-
+// Intervalo de rolagem automático
+setInterval(scrollCarousel, 20); // Ajuste para controlar a velocidade

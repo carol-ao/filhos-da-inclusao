@@ -133,28 +133,28 @@ footer {
   width: 500px;
 }
 
-/* Container principal */
-.container {
+.carousel-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Estilos para o carrossel */
-.carousel {
   overflow: hidden;
-  width: 600px;
-  height: auto;
+  width: 100%; /* Define a largura máxima do carrossel */
+  max-width: 600px; /* Largura fixa para o carrossel */
+  margin: auto;
+  border-radius: 10px;
 }
 
-.carousel-images {
+/* Estilos para o wrapper do carrossel */
+.carousel-wrapper {
   display: flex;
   transition: transform 0.5s ease;
+  width: max-content; /* Garante que o wrapper ajuste a largura ao conteúdo */
 }
 
-.carousel-images img {
-  width: 600px; /* Ajuste a largura conforme necessário */
-  height: 300px;
+/* Estilos das imagens */
+.carousel-slide img {
+  margin-right: 10px; /* Espaço entre as imagens */
+  height: 300px; /* Altura padrão das imagens */
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .partner-logos {
