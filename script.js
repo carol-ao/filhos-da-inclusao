@@ -1,5 +1,12 @@
 
-document.getElementById("contatoForm").addEventListener("submit", function(event) {
+const sobre= document.getElementById("sobre")
+const missao= document.getElementById("missao")
+const parceiros= document.getElementById("parceiros")
+const contato= document.getElementById("contato")
+const contatoForm = document.getElementById("contatoForm")
+
+
+contatoForm.addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
 
     const name = document.getElementById("nome").value;

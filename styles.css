@@ -27,30 +27,23 @@ header {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ec5ad7;
+  padding: 10px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 0;
-  padding: 0 20px;
+  justify-content: center;
+  gap: 10px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.nav-links a:hover {
-  color: #e0e0e0;
+.navbar button {
+  background-color: #ec5ad7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 /* Seções */
@@ -122,22 +115,26 @@ footer {
   color: #777;
 }
 
-#principal {
+.beginning {
   background-color: #f6ce2e;
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#principal img {
-  width: 500px;
+.kids > img {
+  width: 240px;
+}
+
+#logo {
+  max-width: 560px;
 }
 
 .carousel-container {
   display: flex;
   overflow: hidden;
   width: 100%; /* Define a largura máxima do carrossel */
-  max-width: 600px; /* Largura fixa para o carrossel */
+  max-width: 800px; /* Largura fixa para o carrossel */
   margin: auto;
   border-radius: 10px;
 }

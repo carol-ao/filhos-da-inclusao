@@ -8,21 +8,20 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#missao">Missão e Visão</a></li>
-          <li><a href="#parceiros">Parceiros</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      <div class="navbar">
+        <button onclick="scrollToSection('inicio')">Início</button>
+        <button onclick="scrollToSection('sobre')">Sobre Nós</button>
+        <button onclick="scrollToSection('servicos')">Serviços</button>
+        <button onclick="scrollToSection('contato')">Contato</button>
+      </div>
     </header>
-
-    <div id="principal">
-      <img
-        src="img/filhos-da-inclusão-abertura.jpeg"
-        alt="Logo Filhos da Inclusão"
-      />
+    <div class="beginning">
+      <div>
+        <img id="logo" src="img/logo3.png" alt="Logo Filhos da Inclusão" />
+      </div>
+      <div class="kids">
+        <img src="img/criancas3.png" alt="desenho crianças" />
+      </div>
     </div>
     <!-- Carrossel de fotos -->
     <div class="carousel-container">
@@ -89,7 +88,7 @@
         </p>
       </section>
       <!-- Seção de Parceiros -->
-      <section class="partners">
+      <section class="parceiros">
         <h2>Parceiros</h2>
         <div class="partner-logos">
           <img src="img/bernhoeft.jpg" alt="Bernhoeft" />
@@ -102,6 +101,7 @@
 
       <section id="contato">
         <h2>Contato</h2>
+        <div class="social"></div>
         <form id="contatoForm">
           <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" required />
