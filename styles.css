@@ -177,11 +177,7 @@ footer {
   .navbar {
     flex-direction: column;
   }
-  .nav-links {
+  .beginning {
     flex-direction: column;
-    margin-top: 10px;
-  }
-  .nav-links li {
-    margin: 10px 0;
   }
 }
